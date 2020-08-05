@@ -1,0 +1,89 @@
+p {
+    text-align: center;
+}
+
+body {
+    font-size: 150%;
+}
+
+img {
+    float: top;
+    width: 30%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+}
+
+header {
+    color: royalblue;
+    text-align: center;
+}
+
+footer {
+
+    text-align: center;
+    background-color: royalblue;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+
+}
+
+.meme {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0.5em;
+    color: white;
+    background-color: royalblue;
+}
+
+input {
+
+    padding: 0.4em;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table {
+    font-size: 120%;
+}
+
+.subpop {
+    font-size: 25px;
+}
+
+.superpop {
+    font-size: 32px;
+}
+
+.fontdark{
+    color: #d3d9df;
+}
+.buttonPurple{
+    background-color: #9370DB;
+    color: white;
+
+}
+.TryCenter{
+
+    margin-left: 2%;
+}
+

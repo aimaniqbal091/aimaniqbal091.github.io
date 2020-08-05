@@ -1,0 +1,50 @@
+.grad{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(147,112,219,1) 100%);
+}
+.Missgrad{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(29,180,208,1) 100%);
+}
+
+.bluegrad{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(182,194,253,1) 44%, rgba(63,94,251,1) 100%);
+}
+.oggrad{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(236,146,54,1) 57%);
+}
+.darkr{
+    background: #1b1e21;
+}
+
+.bluerr{
+    background: rgb(5,93,185);
+    background: linear-gradient(180deg, rgba(5,93,185,1) 0%, rgba(17,17,17,1) 31%);
+
+}
+.purplerr{
+    background: rgb(95,5,185);
+    background: linear-gradient(180deg, rgba(95,5,185,1) 0%, rgba(17,17,17,1) 31%);
+}
+
+.backhome{
+    background-color: #161515;
+    background-image: linear-gradient(180deg, #161515 0%, #6284FF 50%, #100b0b 100%);
+
+}
+.aveBackpur{
+    background-color: #161515;
+    background-image: linear-gradient(180deg, #161515 0%, #8b4bce 50%, #100b0b 100%);
+
+}
+.avebackblue{
+    background-color: #161515;
+    background-image: linear-gradient(180deg, #161515 0%, #0019dc 50%, #100b0b 100%);
+
+}
+.bg-darker{
+
+    background-color: black;
+}

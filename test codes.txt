@@ -1,0 +1,15 @@
+            <?php
+            if ($GreenProf<0){
+                echo "<p> Profit or loss for<strong>",$NumShares,"</strong> shares is <strong>", $GreenProf,"</strong>$</p>";
+            }
+            ?>\
+
+
+            IT Chapter Two (1990) - Caravan Of Garbage
+<div style="text-align: center">
+
+    <h3 style="text-align: center; color: white; background-color: royalblue"> Some useful resources </h3>
+    <a href="https://marketchameleon.com/">Market Cameleon </a><br>
+    <a href="https://www.marketwatch.com/tools/ipo-calendar">IPO Calender (marketwatch)</a><br>
+    <a href="https://finance.yahoo.com/trending-tickers"> Yahoo Finance most trending tickers</a>
+</div>
