@@ -11,7 +11,7 @@
 <header>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-darker">
-        <a class="navbar-brand" href="home.html">Alpha Stocks</a>
+        <a class="navbar-brand" href="index.html">Alpha Stocks</a>
 
     </nav>
     <br>
