@@ -12,14 +12,14 @@
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-darker">
-        <a class="navbar-brand" href="index.html">  Alpha Stocks</a>
+        <a class="navbar-brand" href="index.html"> Home</a>
     <br>
     </nav>
 </header>
 
 
 <body class="avebackblue fontdark" style="background-repeat: no-repeat;background-attachment: fixed;">
-<h1 class="superpop"> Aiman's Lazy calculator </h1>
+<h1 class="superpop"> Profit or Loss Calculator </h1>
 <br>
 <div class="container">
     <div class="row">
@@ -29,19 +29,19 @@
             <form action="darkNetCalci.php" method="post">
                 <p>
                     <label for="buyingPrice">Buying Price:</label><br>
-                    <input type="text" name="buyingPrice" id="buyingPrice" required>
+                    <input type="text" name="buyingPrice" onfocus="this.value=''" id="buyingPrice" required value="<?php if(isset($_POST['buyingPrice'])) echo $_POST['buyingPrice']?>">
                 </p>
                 <p>
                     <label for="SellingPrice">Selling price :</label><br>
-                    <input type="text" name="SellingPrice" id="SellingPrice" required>
+                    <input type="text" name="SellingPrice" onfocus="this.value=''" id="SellingPrice" required value="<?php if(isset($_POST['SellingPrice'])) echo $_POST['SellingPrice']?>">
                 </p>
                 <p>
                     <label for="NumShares"> Number of Shares:</label><br>
-                    <input type="text" name="NumShares" id="NumShares" required>
+                    <input type="text" name="NumShares" id="NumShares" onfocus="this.value=''" required value="<?php if(isset($_POST['NumShares'])) echo $_POST['NumShares']?>">
                 </p>
                 <p>
                     <input type="submit" value="Submit" class="btn btn-primary">
-                    <input type="reset" value="Reset" class="btn btn-primary">
+
                 </p>
 
             </form>
@@ -56,15 +56,16 @@
             $SellingPrice =0;
             $NumShares = 0;
 
-            if(!empty($_POST['buyingPrice'])){
+            if(isset($_POST['buyingPrice'])){
+
                 $BuyingPrice = $_POST["buyingPrice"];
 
             }
-            if(!empty($_POST['SellingPrice'])){
+            if(isset($_POST['SellingPrice'])){
                 $SellingPrice = $_POST["SellingPrice"];
 
             }
-            if(!empty($_POST['NumShares'])){
+            if(isset($_POST['NumShares'])){
                 $NumShares = $_POST["NumShares"];
 
             }
@@ -78,7 +79,7 @@
             $PorL =0;
             $tax=0;
             $GreenProf =0;
-            if (!empty($_POST['buyingPrice'])) {
+            if (isset($_POST['buyingPrice'])) {
 
                 $Diff = $SellingPrice - $BuyingPrice;
                 $PorL = $Diff * $NumShares;

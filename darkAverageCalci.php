@@ -11,7 +11,7 @@
 <header>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-darker">
-        <a class="navbar-brand" href="index.html">Alpha Stocks</a>
+        <a class="navbar-brand" href="index.html">Home</a>
 
     </nav>
     <br>
@@ -20,7 +20,7 @@
 
 
 <body class="aveBackpur fontdark" style="background-repeat: no-repeat;background-attachment: fixed;">
-<h1 class="superpop"> Aiman's Lazy calculator </h1>
+<h1 class="superpop"> Average Calculator </h1>
 <br>
 <div class="container">
     <div class="row">
@@ -30,24 +30,24 @@
             <form onsubmit="" action="darkAverageCalci.php" method="post">
                 <p>
                     <label for="have1">How many shares do you own </label><br>
-                    <input type="text" name="have1" id="have1" required>
+                    <input type="text" name="have1" id="have1"  onfocus="this.value=''" required  value="<?php if(isset($_POST['have1'])) echo $_POST['have1']?>">
                 </p>
                 <p>
                     <label for="bought1"> What is the current average purchase price? </label><br>
-                    <input type="text" name="bought1" id="bought1" required>
+                    <input type="text" name="bought1" onfocus="this.value=''" id="bought1" required value="<?php if(isset($_POST['bought1'])) echo $_POST['bought1']?>">
                 </p>
                 <p>
                     <label for="have2"> How many more shares would you like to buy? </label><br>
-                    <input type="text" name="have2" id="have2" required>
+                    <input type="text" name="have2" onfocus="this.value=''" id="have2" required value="<?php if(isset($_POST['have2'])) echo $_POST['have2']?>">
                 </p>
                 <p>
                     <label for="bought2">At what average price?</label><br>
-                    <input type="text" name="bought2" id="bought2" required>
+                    <input type="text" name="bought2" onfocus="this.value=''" id="bought2" required value="<?php if(isset($_POST['bought2'])) echo $_POST['bought2']?>">
                     <br>
                 </p>
                 <P>
                     <input type="submit" value="Submit" class="btn" style="color:#ffffff;background-color: #5f05b9">
-                    <input type="reset" value="Reset " class="btn" style="color:#ffffff;background-color: #5f05b9">
+
                 </P>
             </form>
         </div>
