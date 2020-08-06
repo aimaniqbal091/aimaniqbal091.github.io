@@ -52,20 +52,39 @@
             <h2 class="subpop"><em> Following is the calculated data </em></h2>
             <br>
             <?php
+            $BuyingPrice = 0;
+            $SellingPrice =0;
+            $NumShares = 0;
 
-            $BuyingPrice = $_POST["buyingPrice"];
-            $SellingPrice = $_POST["SellingPrice"];
-            $NumShares = $_POST["NumShares"];
+            if(!empty($_POST['buyingPrice'])){
+                $BuyingPrice = $_POST["buyingPrice"];
+
+            }
+            if(!empty($_POST['SellingPrice'])){
+                $SellingPrice = $_POST["SellingPrice"];
+
+            }
+            if(!empty($_POST['NumShares'])){
+                $NumShares = $_POST["NumShares"];
+
+            }
             ?>
             <p style="text-align: center">Buying price :<strong><?php echo $BuyingPrice ?></strong>$</p>
             <p style="text-align: center">Selling price : <strong><?php echo $SellingPrice ?></strong>$</p>
             <p style="text-align: center">Number of shares <strong>: <?php echo $NumShares ?></strong></p><br>
 
-            <?php $Diff = $SellingPrice - $BuyingPrice;
-            $PorL = $Diff * $NumShares;
-            $tax = $PorL * 0.30;
-            $GreenProf = $PorL - $tax;
+            <?php
+            $Diff=0;
+            $PorL =0;
+            $tax=0;
+            $GreenProf =0;
+            if (!empty($_POST['buyingPrice'])) {
 
+                $Diff = $SellingPrice - $BuyingPrice;
+                $PorL = $Diff * $NumShares;
+                $tax = $PorL * 0.30;
+                $GreenProf = $PorL - $tax;
+            }
             ?>
 
             <p> The Difference currently is :<strong> <?php echo $Diff ?></strong>$</p>
